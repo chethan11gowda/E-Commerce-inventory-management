@@ -1,0 +1,122 @@
+/* Page background */
+.add-product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 88vh;
+  background: linear-gradient(135deg, #eef2f7, #f9fafc);
+  padding: 20px;
+  animation: fadeBg 6s infinite alternate ease-in-out;
+}
+
+/* Animated background subtle shift */
+@keyframes fadeBg {
+  from { background: linear-gradient(135deg, #eef2f7, #f9fafc); }
+  to { background: linear-gradient(135deg, #f3f4f8, #edf0fa); }
+}
+
+/* Form card with glass effect */
+.form-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+  width: 100%;
+  max-width: 480px;
+  animation: floatIn 0.5s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.form-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Title */
+.form-card h2 {
+  text-align: center;
+  color: #1a202c;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+/* Labels */
+.form-card label {
+  display: block;
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #4a5568;
+}
+
+/* Inputs & Textarea */
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 6px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #f9fafb;
+  transition: all 0.25s ease;
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.4);
+  background: #fff;
+  outline: none;
+  transform: scale(1.02);
+}
+
+.form-card textarea {
+  resize: vertical;
+  min-height: 90px;
+  max-height: 160px;
+}
+
+/* File input */
+.form-card input[type="file"] {
+  border: none;
+  background: transparent;
+  padding: 6px 0;
+}
+
+/* Submit button */
+.form-card button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #6c63ff, #764ba2);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-card button:hover {
+  background: linear-gradient(135deg, #5a55e6, #6c63ff);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(108, 99, 255, 0.3);
+}
+
+/* Animations */
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

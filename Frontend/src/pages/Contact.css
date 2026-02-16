@@ -1,0 +1,132 @@
+/* Contact page container */
+.contact-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6c63ff, #42a5f5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Contact form box */
+.contact-box {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 520px;
+  animation: fadeInUp 0.6s ease;
+}
+
+/* Heading */
+.contact-box h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  background: linear-gradient(90deg, #6c63ff, #42a5f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Form fields */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  background: #fdfdfd;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Focus effect */
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 6px rgba(108, 99, 255, 0.4);
+}
+
+/* Textarea */
+.form-group textarea {
+  resize: none;
+}
+
+/* Dropdown style */
+.form-group select {
+  background: linear-gradient(135deg, #f9f9f9, #f1f1f1);
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+  padding-right: 35px;
+}
+
+/* Add custom arrow to dropdown */
+.form-group select::after {
+  content: "▼";
+  font-size: 0.8rem;
+  color: #666;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #6c63ff, #42a5f5);
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #5848e5, #2d82d5);
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* No orders text */
+.no-orders {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 6px;
+}
+
+/* Smooth fade animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

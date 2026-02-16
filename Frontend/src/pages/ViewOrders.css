@@ -1,0 +1,87 @@
+/* ViewOrders.css */
+
+.view-orders-container {
+  padding: 30px;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.view-orders-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Table Styling */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.orders-table thead {
+  background: #6c63ff;
+  color: #fff;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 15px;
+}
+
+/* Hover Effect on Rows */
+.orders-table tbody tr {
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.orders-table tbody tr:hover {
+  background: #f1f0ff;
+  transform: scale(1.01);
+}
+
+/* Status Column */
+.orders-table .completed {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.orders-table .pending {
+  color: #e63946;
+  font-weight: bold;
+}
+
+/* Order items inside a cell */
+.order-item {
+  background: #f9f9f9;
+  padding: 6px 10px;
+  margin: 4px 0;
+  border-radius: 8px;
+  border-left: 4px solid #6c63ff;
+  font-size: 14px;
+}
+
+/* Dropdown (status selector) */
+.status-dropdown {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+  font-size: 14px;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+
+.status-dropdown:hover {
+  border-color: #6c63ff;
+  background: #f1f0ff;
+}

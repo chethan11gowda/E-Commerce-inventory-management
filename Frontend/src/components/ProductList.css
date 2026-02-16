@@ -1,0 +1,85 @@
+.product-list-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.product-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.product-list-table th,
+.product-list-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.product-list-table th {
+  background-color: #6c63ff;
+  color: white;
+  font-weight: bold;
+}
+
+.product-list-table td {
+  background-color: #fafafa;
+}
+
+.even-row {
+  background-color: #f7f7f7;
+}
+
+.odd-row {
+  background-color: #fff;
+}
+
+.product-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.action-link {
+  color: #6c63ff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.action-link:hover {
+  color: #5747f6;
+}
+
+.delete-link {
+  margin-left: 15px;
+}
+
+.delete-link:hover {
+  color: red;
+}
+
+.product-list-container .product-list-table td:last-child {
+  text-align: center;
+}
+
+.product-list-container table {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-list-container table td,
+.product-list-container table th {
+  text-align: center;
+}
