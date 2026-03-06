@@ -13,7 +13,7 @@ import ProductList from "./components/ProductList";
 import SuccessPage from "./components/SuccessPage";
 import UpdateProduct from "./components/UpdateProduct";
 import About from "./pages/About";
-import AdminDashboard from "./pages/adminDashboard";
+import AdminDashboard from "./pages/AdminDashboard";
 import AdminLogin from "./pages/AdminLogin";
 import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
